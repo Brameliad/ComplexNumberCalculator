@@ -1,0 +1,31 @@
+public class ComplexNumber
+{
+    private double real;
+    private double img;
+    public ComplexNumber(double real, double img)
+    {
+        this.real=real;
+        this.img=img;
+    }
+    public double getReal()
+    {
+    return this.real;
+    }
+    public double getImaginary()
+    {
+    return this.img;
+    }
+    public String toString(){
+    return this.real+" + " +this.img+"i";
+    }
+    public boolean equals(ComplexNumber x)
+    {
+    if (this.real==x.real&&this.img==x.img) return true;
+    else return false;
+    }
+    public String getConjugate()
+    {
+    return this.real+"+"+(this.img*-1)+"i";
+    }
+    
+}
